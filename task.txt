@@ -4,6 +4,7 @@ Do the MVP
 -Basic Css
 -Basic Js
 -Make the cursor draw lines
+- Inverse feature, change background color to day or night mode
 
 Scale design
 - Add extra features from others
