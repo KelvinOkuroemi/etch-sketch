@@ -1,0 +1,1 @@
+alert("get sum")
