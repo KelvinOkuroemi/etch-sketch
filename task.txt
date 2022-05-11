@@ -1,0 +1,9 @@
+Do the MVP
+- Create Divs
+-Basic html
+-Basic Css
+-Basic Js
+-Make the cursor draw lines
+
+Scale design
+- Add extra features from others
