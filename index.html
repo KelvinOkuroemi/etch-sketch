@@ -1,17 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>etch A sketch</title>
     <!-- bootstrap -->
     <!-- css -->
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="index.css" />
     <!-- javascript -->
     <script src="app.js" defer></script>
-</head>
-<body>
-    <h1>Let's go yeaaaaah</h1>
-</body>
+  </head>
+  <body>
+    <div class="title">Sketchy</div>
+    <div class="container"></div>
+    <div class="buttons">
+        <button class="black-btn">black</button>
+        <button class="white-btn">white</button>
+        <button class="random-color-btn">random color</button>
+        <button class="eraser-btn">eraser</button>
+        <button class="reset-btn">reset</button>
+    </div>
+    <div class="input">
+        <input type="text" placeholder="board size" value="16" onchange="changeSize(this.value)"/>
+        <!-- This button has no use. It is just here for UX -->
+        <button>Set size</button>
+    </div>
+    <div class="update"></div>
+  </body>
 </html>

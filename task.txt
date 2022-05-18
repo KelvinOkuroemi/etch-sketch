@@ -1,10 +1,7 @@
 Do the MVP
-- Create Divs
--Basic html
--Basic Css
--Basic Js
+
 -Make the cursor draw lines
-- Inverse feature, change background color to day or night mode
+- Use grid to organize the buttons
 
 Scale design
 - Add extra features from others
