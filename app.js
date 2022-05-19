@@ -1,5 +1,5 @@
 const board = document.querySelector(".container");
-
+let clickID = true;
 
 // Default color
 let color = "black";
@@ -39,10 +39,12 @@ function changeSize(input) {
 
 // Draw color
 function colorSquare() {
-  if (color === "random") {
-    this.style.backgroundColor = `hsl(${Math.random() * 360},100%, 50%)`;
-  } else {
-    this.style.backgroundColor = color;
+  if (clickID) {
+    if (color === "random") {
+      this.style.backgroundColor = `hsl(${Math.random() * 360},100%, 50%)`;
+    } else {
+      this.style.backgroundColor = color;
+    }
   }
 }
 
@@ -50,15 +52,13 @@ function changeColor(colorChoice) {
   color = colorChoice;
 }
 
-// Event listeners
-
-// let reset = document.getElementById("reset-btn");
-
-// reset.addEventListener("click", function () {
-//   square.forEach((div) => (div.style.backgroundColor = "white"));
-// });
-
 function resetBoard() {
   let square = board.querySelectorAll("div");
   square.forEach((div) => (div.style.backgroundColor = "white"));
 }
+
+// allow shapes to be drawn only when there is a click
+
+document.querySelector("body").addEventListener("click",()=>{
+  clickID = !clickID
+})
