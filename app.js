@@ -1,5 +1,9 @@
 const board = document.querySelector(".container");
 
+
+// Default color
+let color = "black";
+
 // Function to create board
 function createBoard(size) {
   let square = board.querySelectorAll("div");
@@ -33,20 +37,28 @@ function changeSize(input) {
   }
 }
 
-function colorSquare(color) {
-  this.style.backgroundColor = "black";
-  this.classList.add("marked");
+// Draw color
+function colorSquare() {
+  if (color === "random") {
+    this.style.backgroundColor = `hsl(${Math.random() * 360},100%, 50%)`;
+  } else {
+    this.style.backgroundColor = color;
+  }
+}
+
+function changeColor(colorChoice) {
+  color = colorChoice;
 }
 
 // Event listeners
 
-// eraser function *****
-// set button click to store a value of true or false
-// e.g button.onclick => drawID to true
-// button.onclick => draw ID to false
-// when you mouse over, draw
-// add class name to the div that is drawn over
-// Toggle eraser button
-// when toggled generate event object
-// if event object class list contains class remove class list indicator
-// set background color to default
+// let reset = document.getElementById("reset-btn");
+
+// reset.addEventListener("click", function () {
+//   square.forEach((div) => (div.style.backgroundColor = "white"));
+// });
+
+function resetBoard() {
+  let square = board.querySelectorAll("div");
+  square.forEach((div) => (div.style.backgroundColor = "white"));
+}

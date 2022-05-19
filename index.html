@@ -15,11 +15,10 @@
     <div class="title">Sketchy</div>
     <div class="container"></div>
     <div class="buttons">
-        <button class="black-btn">black</button>
-        <button class="white-btn">white</button>
-        <button class="random-color-btn">random color</button>
-        <button class="eraser-btn">eraser</button>
-        <button class="reset-btn">reset</button>
+        <button class="black-btn" onclick="changeColor('black')">black</button>
+        <button class="random-color-btn" onclick="changeColor('random')">rainbow</button>
+        <button id="reset-btn" onclick="resetBoard()">reset</button>
+        <button class="eraser-btn" onclick="changeColor('white')">eraser</button>
     </div>
     <div class="input">
         <input type="text" placeholder="board size" value="16" onchange="changeSize(this.value)"/>

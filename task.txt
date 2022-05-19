@@ -1,7 +1,0 @@
-Do the MVP
-
--Make the cursor draw lines
-- Use grid to organize the buttons
-
-Scale design
-- Add extra features from others
