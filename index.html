@@ -12,19 +12,34 @@
     <script src="app.js" defer></script>
   </head>
   <body>
-    <div class="title">Sketchy</div>
-    <div><h4>Click to start/pause drawing</h4></div>
-    <div class="container"></div>
-    <div class="buttons">
+    <div class="title">
+      <div>Sketchy</div>
+      <div><h4>Click to start/pause drawing</h4></div>
+    </div>
+
+    <!-- conatainer and button -->
+    <div class="container">
+      <div class="buttons">
         <button class="black-btn" onclick="changeColor('black')">black</button>
-        <button class="random-color-btn" onclick="changeColor('random')">rainbow</button>
+        <button class="random-color-btn" onclick="changeColor('random')">
+          rainbow
+        </button>
         <button class="reset-btn" onclick="resetBoard()">reset</button>
-        <button class="eraser-btn" onclick="changeColor('white')">eraser</button>
+        <button class="eraser-btn" onclick="changeColor('white')">
+          eraser
+        </button>
+      </div>
+      <div class="board"></div>   
     </div>
     <div class="input">
-        <input type="text" placeholder="board size" value="16" onchange="changeSize(this.value)"/>
-        <!-- This button has no use. It is just here for UX -->
-        <button>Set size</button>
+      <input
+        type="text"
+        placeholder="board size"
+        value="16"
+        onchange="changeSize(this.value)"
+      />
+      <!-- This button has no use. It is just here for UX -->
+      <button>Set size</button>
     </div>
     <div class="update"></div>
   </body>

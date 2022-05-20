@@ -1,13 +1,29 @@
-.title{}
-
-.container{
-    height: 450px;
-    width: 450px;
-    display: grid;
-    border: 30px solid blue;
+.title{
+    text-align: center;
+    margin: 3rem 0 1rem 8rem;
 }
 
-.buttons{}
+.container{
+    display: grid;
+    grid-template-columns: 4rem 28.125rem;
+    gap: 3rem;
+    justify-content: center;
+   
+}
+.board{
+    height: 28.125rem;
+    width: 28.125rem;
+    display: grid;
+    border: 1.875rem solid blue;
+    margin: 0 auto;
+}
+
+.buttons{
+   display: flex;
+   flex-direction: column;
+   gap: 3rem;
+   justify-content: center;
+}
 
 .black-btn{}
 
@@ -15,8 +31,17 @@
 
 .random-color-btn{}
 
+.eraser-btn{}
+
 .reset-btn{}
 
-.input{}
+.input{
+    text-align: center;
+    margin: 0.5rem 0 0 8rem;
+}
 
-.eraser-btn{}
+.update{
+    text-align: center;
+    margin: 0.5rem 0 0 8rem;
+}
+

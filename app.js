@@ -1,5 +1,5 @@
-const board = document.querySelector(".container");
-let clickID = true;
+const board = document.querySelector(".board");
+let clickID = false;
 
 // Default color
 let color = "black";
