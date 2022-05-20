@@ -6,13 +6,13 @@
 .container{
     display: grid;
     grid-template-columns: 4rem 28.125rem;
-    gap: 3rem;
+    gap: 1rem;
     justify-content: center;
    
 }
 .board{
-    height: 28.125rem;
-    width: 28.125rem;
+    height: 18rem;
+    width: 18rem;
     display: grid;
     border: 1.875rem solid blue;
     margin: 0 auto;
