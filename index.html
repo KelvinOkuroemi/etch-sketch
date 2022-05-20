@@ -20,12 +20,12 @@
     <!-- conatainer and button -->
     <div class="container">
       <div class="buttons">
-        <button class="black-btn" onclick="changeColor('black')">black</button>
-        <button class="random-color-btn" onclick="changeColor('random')">
+        <button class="black-btn button-30" onclick="changeColor('black')">black</button>
+        <button class="random-color-btn button-30" onclick="changeColor('random')">
           rainbow
         </button>
-        <button class="reset-btn" onclick="resetBoard()">reset</button>
-        <button class="eraser-btn" onclick="changeColor('white')">
+        <button class="reset-btn button-30" onclick="resetBoard()">reset</button>
+        <button class="eraser-btn button-30" onclick="changeColor('white')">
           eraser
         </button>
       </div>
@@ -38,8 +38,7 @@
         value="16"
         onchange="changeSize(this.value)"
       />
-      <!-- This button has no use. It is just here for UX -->
-      <button>Set size</button>
+      <button class="button-33">Set size</button>
     </div>
     <div class="update"></div>
   </body>
